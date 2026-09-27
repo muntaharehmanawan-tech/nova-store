@@ -3,56 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaMarket Global - Winning Products</title>
+    <title>NovaMarket | Global Trending Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8f9fa; margin: 0; padding: 20px; color: #333; }
-        .container { max-width: 1200px; margin: auto; }
-        h1 { text-align: center; color: #111; margin-bottom: 5px; }
-        .sub { text-align: center; color: #666; margin-bottom: 30px; font-size: 14px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; padding: 15px; display: flex; flex-direction: column; justify-content: space-between; }
-        .card img { width: 100%; height: 220px; object-fit: cover; border-radius: 8px; }
-        .title { font-size: 18px; font-weight: 600; margin: 12px 0 8px 0; color: #2c3e50; }
-        .price { color: #27ae60; font-size: 20px; font-weight: bold; }
-        .profit-tag { background: #e8f8f5; color: #16a085; padding: 6px 12px; border-radius: 6px; font-size: 13px; margin: 10px 0; display: inline-block; font-weight: 500; }
-        .btn { display: block; text-align: center; background: #2f3640; color: white; padding: 12px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 10px; }
-        .btn:hover { background: #353b48; }
-        .crypto-note { font-size: 11px; text-align: center; color: #e1b12c; margin-top: 6px; font-weight: bold; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+        body { background: #f9fafb; color: #111827; line-height: 1.5; }
+        .announcement-bar { background: #0f172a; color: #f8fafc; text-align: center; font-size: 13px; padding: 10px; font-weight: 500; }
+        header { background: #ffffff; border-bottom: 1px solid #e5e7eb; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 22px; font-weight: 700; color: #0f172a; letter-spacing: -0.5px; }
+        .logo span { color: #2563eb; }
+        .secure-badge { font-size: 13px; background: #eff6ff; color: #1d4ed8; padding: 6px 14px; border-radius: 20px; font-weight: 600; }
+        .hero { text-align: center; padding: 50px 20px 30px; background: linear-gradient(to bottom, #ffffff, #f9fafb); }
+        .hero h1 { font-size: 36px; font-weight: 800; color: #0f172a; margin-bottom: 10px; }
+        .hero p { color: #6b7280; font-size: 16px; max-width: 600px; margin: auto; }
+        .container { max-width: 1280px; margin: auto; padding: 40px 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 30px; }
+        .card { background: #ffffff; border: 1px solid #e5e7eb; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s, box-shadow 0.2s; position: relative; }
+        .card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.08); }
+        .badge { position: absolute; top: 14px; left: 14px; background: #0f172a; color: #ffffff; font-size: 11px; font-weight: 600; padding: 5px 10px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .card img { width: 100%; height: 260px; object-fit: cover; background: #f3f4f6; }
+        .card-body { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
+        .title { font-size: 16px; font-weight: 600; color: #1f2937; margin-bottom: 10px; line-height: 1.4; }
+        .rating-row { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #4b5563; margin-bottom: 14px; }
+        .stars { color: #f59e0b; font-weight: 700; }
+        .price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 16px; }
+        .price { font-size: 22px; font-weight: 700; color: #0f172a; }
+        .compare-price { font-size: 15px; color: #9ca3af; text-decoration: line-through; }
+        .shipping-tag { font-size: 12px; color: #059669; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 4px; }
+        .btn { display: block; text-align: center; background: #2563eb; color: #ffffff; padding: 14px; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 15px; transition: background 0.2s; }
+        .btn:hover { background: #1d4ed8; }
+        footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 40px 20px; margin-top: 60px; font-size: 14px; }
+        footer p { margin-bottom: 8px; }
     </style>
 </head>
 <body>
+    <div class="announcement-bar">
+        ⚡ Free Express Shipping to US & UK on All Orders • Secure USDT Crypto Checkout
+    </div>
+    
+    <header>
+        <div class="logo">Nova<span>Market</span></div>
+        <div class="secure-badge">🔒 256-Bit Encrypted Checkout</div>
+    </header>
+
+    <div class="hero">
+        <h1>Trending Viral Products</h1>
+        <p>Curated top-tier products shipped directly to your door with guaranteed fast delivery and secure crypto payments.</p>
+    </div>
+
     <div class="container">
-        <h1>🔥 NovaMarket Direct</h1>
-        <div class="sub">Express US/UK Shipping • Secure Crypto Checkout</div>
         <div class="grid">
 
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Wireless Smart Watch Pro">
-                <div>
-                    <div class="title">Wireless Smart Watch Pro</div>
-                    <div class="price">$39.99 USD</div>
-                    <div class="profit-tag">Net Profit Margin: 73.74%</div>
-                </div>
-                <div>
-                    <a href="https://pay.binance.com" target="_blank" class="btn">Pay with USDT</a>
-                    <div class="crypto-note">⚡ Instant Crypto Verification</div>
+                <div class="badge">US Express</div>
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Wireless Smart Watch Pro Series 8">
+                <div class="card-body">
+                    <div>
+                        <div class="title">Wireless Smart Watch Pro Series 8</div>
+                        <div class="rating-row">
+                            <span class="stars">★★★★★</span>
+                            <span>4.8 (3100+ reviews)</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$44.99</span>
+                            <span class="compare-price">$79.99</span>
+                        </div>
+                        <div class="shipping-tag">
+                            ✓ Free Express US/UK Shipping
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://pay.binance.com" target="_blank" class="btn">Pay with USDT</a>
+                    </div>
                 </div>
             </div>
     
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f" alt="Mini Portable Air Pump">
-                <div>
-                    <div class="title">Mini Portable Air Pump</div>
-                    <div class="price">$49.99 USD</div>
-                    <div class="profit-tag">Net Profit Margin: 68.99%</div>
+                <div class="badge">Best Seller in US</div>
+                <img src="https://images.unsplash.com/photo-1609592806148-d64e9a5b068d" alt="MagSafe Magnetic Wireless Power Bank 10000mAh">
+                <div class="card-body">
+                    <div>
+                        <div class="title">MagSafe Magnetic Wireless Power Bank 10000mAh</div>
+                        <div class="rating-row">
+                            <span class="stars">★★★★★</span>
+                            <span>4.9 (1420+ reviews)</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$59.99</span>
+                            <span class="compare-price">$89.99</span>
+                        </div>
+                        <div class="shipping-tag">
+                            ✓ Free Express US/UK Shipping
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://pay.binance.com" target="_blank" class="btn">Pay with USDT</a>
+                    </div>
                 </div>
-                <div>
-                    <a href="https://pay.binance.com" target="_blank" class="btn">Pay with USDT</a>
-                    <div class="crypto-note">⚡ Instant Crypto Verification</div>
+            </div>
+    
+            <div class="card">
+                <div class="badge">UK Top Pick</div>
+                <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc" alt="Precision Electric Cordless Screwdriver Set">
+                <div class="card-body">
+                    <div>
+                        <div class="title">Precision Electric Cordless Screwdriver Set</div>
+                        <div class="rating-row">
+                            <span class="stars">★★★★★</span>
+                            <span>4.9 (2150+ reviews)</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$49.99</span>
+                            <span class="compare-price">$79.99</span>
+                        </div>
+                        <div class="shipping-tag">
+                            ✓ Free Express US/UK Shipping
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://pay.binance.com" target="_blank" class="btn">Pay with USDT</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="badge">High Demand</div>
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="RGB Ambient Car LED Strip Lights (App Controlled)">
+                <div class="card-body">
+                    <div>
+                        <div class="title">RGB Ambient Car LED Strip Lights (App Controlled)</div>
+                        <div class="rating-row">
+                            <span class="stars">★★★★★</span>
+                            <span>4.9 (4200+ reviews)</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$29.99</span>
+                            <span class="compare-price">$49.99</span>
+                        </div>
+                        <div class="shipping-tag">
+                            ✓ Free Express US/UK Shipping
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://pay.binance.com" target="_blank" class="btn">Pay with USDT</a>
+                    </div>
                 </div>
             </div>
     
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2026 NovaMarket Direct. All Rights Reserved.</p>
+        <p>Secure Decentralized Payments • Verified Global Fulfillment</p>
+    </footer>
 </body>
 </html>
