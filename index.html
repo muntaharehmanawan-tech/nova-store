@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NovaMarket | Global Trending Store</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -85,7 +86,7 @@
         
         .card img { width: 100%; height: 260px; object-fit: cover; background: #f3f4f6; }
         .card-body { padding: 16px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
-        .title { font-size: 15px; font-weight: 600; color: #1f2937; margin-bottom: 8px; line-height: 1.4; }
+        .title { font-size: 15px; font-weight: 600; color: #1f2937; margin-bottom: 8px; line-height: 1.4; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
         .rating-row { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #4b5563; margin-bottom: 12px; }
         .stars { color: #f59e0b; font-weight: 700; }
         .price-row { display: flex; align-items: baseline; gap: 8px; margin-bottom: 14px; }
@@ -153,295 +154,282 @@
 
     <div class="container">
         <div class="grid">
-
             <article class="card">
                 <div class="badge">Best Seller</div>
-                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Ultrasonic Deep Facial Skin Scrubber Spatula" loading="eager" fetchpriority="high" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="What&#x27;s trending on Amazon right now: Glowy skincare and popu" loading="eager" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <div class="card-body">
+                    <div>
+                        <h3 class="title">What&#x27;s trending on Amazon right now: Glowy skincare and popu</h3>
+                        <div class="rating-row">
+                            <span class="stars" aria-label="Rating: 4.6 out of 5 stars">★★★★★</span>
+                            <span>4.6 (3780+ reviews)</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$28.70</span>
+                            <span class="compare-price">$41.62</span>
+                        </div>
+                        <div class="shipping-tag">
+                            ✓ Free Express Worldwide Shipping
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="badge">Viral Favorite</div>
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Trending products: Top 40 picks to sell online in 2026 - Hos" loading="eager" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <div class="card-body">
+                    <div>
+                        <h3 class="title">Trending products: Top 40 picks to sell online in 2026 - Hos</h3>
+                        <div class="rating-row">
+                            <span class="stars" aria-label="Rating: 4.9 out of 5 stars">★★★★★</span>
+                            <span>4.9 (2725+ reviews)</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$42.14</span>
+                            <span class="compare-price">$61.10</span>
+                        </div>
+                        <div class="shipping-tag">
+                            ✓ Free Express Worldwide Shipping
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="badge">Trending Global</div>
+                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90" alt="RGB App-Controlled Automotive Ambient Lights" loading="eager" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <div class="card-body">
+                    <div>
+                        <h3 class="title">RGB App-Controlled Automotive Ambient Lights</h3>
+                        <div class="rating-row">
+                            <span class="stars" aria-label="Rating: 4.8 out of 5 stars">★★★★★</span>
+                            <span>4.8 (1399+ reviews)</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$34.86</span>
+                            <span class="compare-price">$50.55</span>
+                        </div>
+                        <div class="shipping-tag">
+                            ✓ Free Express Worldwide Shipping
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="badge">Viral Favorite</div>
+                <img src="https://images.unsplash.com/photo-1609592806148-d64e9a5b068d" alt="Ultrasonic Deep Facial Skin Scrubber Spatula" loading="eager" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
                 <div class="card-body">
                     <div>
                         <h3 class="title">Ultrasonic Deep Facial Skin Scrubber Spatula</h3>
                         <div class="rating-row">
                             <span class="stars" aria-label="Rating: 4.7 out of 5 stars">★★★★★</span>
-                            <span aria-label="4.7 stars from 3510 reviews">4.7 (3510+ reviews)</span>
+                            <span>4.7 (2328+ reviews)</span>
                         </div>
                         <div class="price-row">
-                            <span class="price" aria-label="Sale price: $35.20">$35.20</span>
-                            <span class="compare-price" aria-label="Original price: $51.05">$51.05</span>
+                            <span class="price">$39.37</span>
+                            <span class="compare-price">$57.08</span>
                         </div>
                         <div class="shipping-tag">
                             ✓ Free Express Worldwide Shipping
                         </div>
                     </div>
                     <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Secure checkout for Ultrasonic Deep Facial Skin Scrubber Spatula via USDT">Pay with USDT</button>
+                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
                     </div>
                 </div>
             </article>
-        
             <article class="card">
                 <div class="badge">Viral Favorite</div>
-                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Mini Portable Thermal Pocket Photo Printer" loading="eager" fetchpriority="high" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e" alt="Bluetooth 5.0 Wireless Headphones Pro" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
                 <div class="card-body">
                     <div>
-                        <h3 class="title">Mini Portable Thermal Pocket Photo Printer</h3>
+                        <h3 class="title">Bluetooth 5.0 Wireless Headphones Pro</h3>
                         <div class="rating-row">
                             <span class="stars" aria-label="Rating: 4.9 out of 5 stars">★★★★★</span>
-                            <span aria-label="4.9 stars from 1520 reviews">4.9 (1520+ reviews)</span>
+                            <span>4.9 (3850+ reviews)</span>
                         </div>
                         <div class="price-row">
-                            <span class="price" aria-label="Sale price: $35.97">$35.97</span>
-                            <span class="compare-price" aria-label="Original price: $52.16">$52.16</span>
+                            <span class="price">$46.30</span>
+                            <span class="compare-price">$67.14</span>
                         </div>
                         <div class="shipping-tag">
                             ✓ Free Express Worldwide Shipping
                         </div>
                     </div>
                     <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Secure checkout for Mini Portable Thermal Pocket Photo Printer via USDT">Pay with USDT</button>
+                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
                     </div>
                 </div>
             </article>
-        
             <article class="card">
-                <div class="badge">Best Seller</div>
-                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90" alt="Wireless Smart Watch Series 8 Fitness Tracker" loading="eager" fetchpriority="high" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <div class="badge">Customer Choice</div>
+                <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc" alt="Portable UV Sterilization Phone Sanitizer" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
                 <div class="card-body">
                     <div>
-                        <h3 class="title">Wireless Smart Watch Series 8 Fitness Tracker</h3>
+                        <h3 class="title">Portable UV Sterilization Phone Sanitizer</h3>
                         <div class="rating-row">
                             <span class="stars" aria-label="Rating: 4.7 out of 5 stars">★★★★★</span>
-                            <span aria-label="4.7 stars from 2217 reviews">4.7 (2217+ reviews)</span>
+                            <span>4.7 (2458+ reviews)</span>
                         </div>
                         <div class="price-row">
-                            <span class="price" aria-label="Sale price: $36.72">$36.72</span>
-                            <span class="compare-price" aria-label="Original price: $53.25">$53.25</span>
+                            <span class="price">$35.54</span>
+                            <span class="compare-price">$51.53</span>
                         </div>
                         <div class="shipping-tag">
                             ✓ Free Express Worldwide Shipping
                         </div>
                     </div>
                     <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Secure checkout for Wireless Smart Watch Series 8 Fitness Tracker via USDT">Pay with USDT</button>
+                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
                     </div>
                 </div>
             </article>
-        
             <article class="card">
                 <div class="badge">Viral Favorite</div>
-                <img src="https://images.unsplash.com/photo-1609592806148-d64e9a5b068d" alt="Ergonomic Vertical Wireless Mouse Pro" loading="eager" fetchpriority="high" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
-                <div class="card-body">
-                    <div>
-                        <h3 class="title">Ergonomic Vertical Wireless Mouse Pro</h3>
-                        <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.9 out of 5 stars">★★★★★</span>
-                            <span aria-label="4.9 stars from 1621 reviews">4.9 (1621+ reviews)</span>
-                        </div>
-                        <div class="price-row">
-                            <span class="price" aria-label="Sale price: $35.62">$35.62</span>
-                            <span class="compare-price" aria-label="Original price: $51.65">$51.65</span>
-                        </div>
-                        <div class="shipping-tag">
-                            ✓ Free Express Worldwide Shipping
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Secure checkout for Ergonomic Vertical Wireless Mouse Pro via USDT">Pay with USDT</button>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="card">
-                <div class="badge">Viral Favorite</div>
-                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e" alt="RGB App-Controlled Automotive Ambient Lights" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
-                <div class="card-body">
-                    <div>
-                        <h3 class="title">RGB App-Controlled Automotive Ambient Lights</h3>
-                        <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.6 out of 5 stars">★★★★★</span>
-                            <span aria-label="4.6 stars from 3911 reviews">4.6 (3911+ reviews)</span>
-                        </div>
-                        <div class="price-row">
-                            <span class="price" aria-label="Sale price: $34.97">$34.97</span>
-                            <span class="compare-price" aria-label="Original price: $50.71">$50.71</span>
-                        </div>
-                        <div class="shipping-tag">
-                            ✓ Free Express Worldwide Shipping
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Secure checkout for RGB App-Controlled Automotive Ambient Lights via USDT">Pay with USDT</button>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="card">
-                <div class="badge">Viral Favorite</div>
-                <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc" alt="AI Smart Voice Translator Earbuds Pro" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108" alt="AI Smart Voice Translator Earbuds Pro" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
                 <div class="card-body">
                     <div>
                         <h3 class="title">AI Smart Voice Translator Earbuds Pro</h3>
                         <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.7 out of 5 stars">★★★★★</span>
-                            <span aria-label="4.7 stars from 3714 reviews">4.7 (3714+ reviews)</span>
+                            <span class="stars" aria-label="Rating: 4.6 out of 5 stars">★★★★★</span>
+                            <span>4.6 (2189+ reviews)</span>
                         </div>
                         <div class="price-row">
-                            <span class="price" aria-label="Sale price: $44.30">$44.30</span>
-                            <span class="compare-price" aria-label="Original price: $64.23">$64.23</span>
+                            <span class="price">$32.61</span>
+                            <span class="compare-price">$47.28</span>
                         </div>
                         <div class="shipping-tag">
                             ✓ Free Express Worldwide Shipping
                         </div>
                     </div>
                     <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Secure checkout for AI Smart Voice Translator Earbuds Pro via USDT">Pay with USDT</button>
+                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
                     </div>
                 </div>
             </article>
-        
-            <article class="card">
-                <div class="badge">Best Seller</div>
-                <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108" alt="Bladeless Portable Rechargeable Neck Fan" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
-                <div class="card-body">
-                    <div>
-                        <h3 class="title">Bladeless Portable Rechargeable Neck Fan</h3>
-                        <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.7 out of 5 stars">★★★★★</span>
-                            <span aria-label="4.7 stars from 2572 reviews">4.7 (2572+ reviews)</span>
-                        </div>
-                        <div class="price-row">
-                            <span class="price" aria-label="Sale price: $35.32">$35.32</span>
-                            <span class="compare-price" aria-label="Original price: $51.21">$51.21</span>
-                        </div>
-                        <div class="shipping-tag">
-                            ✓ Free Express Worldwide Shipping
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Secure checkout for Bladeless Portable Rechargeable Neck Fan via USDT">Pay with USDT</button>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="card">
-                <div class="badge">Trending Global</div>
-                <img src="https://images.unsplash.com/photo-1544117519-31a4b719223d" alt="Solar Powered Outdoor Security Camera" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
-                <div class="card-body">
-                    <div>
-                        <h3 class="title">Solar Powered Outdoor Security Camera</h3>
-                        <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.9 out of 5 stars">★★★★★</span>
-                            <span aria-label="4.9 stars from 3791 reviews">4.9 (3791+ reviews)</span>
-                        </div>
-                        <div class="price-row">
-                            <span class="price" aria-label="Sale price: $31.88">$31.88</span>
-                            <span class="compare-price" aria-label="Original price: $46.22">$46.22</span>
-                        </div>
-                        <div class="shipping-tag">
-                            ✓ Free Express Worldwide Shipping
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Secure checkout for Solar Powered Outdoor Security Camera via USDT">Pay with USDT</button>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="card">
-                <div class="badge">Best Seller</div>
-                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="MagSafe Magnetic Wireless Power Bank 10000mAh" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
-                <div class="card-body">
-                    <div>
-                        <h3 class="title">MagSafe Magnetic Wireless Power Bank 10000mAh</h3>
-                        <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.9 out of 5 stars">★★★★★</span>
-                            <span aria-label="4.9 stars from 2915 reviews">4.9 (2915+ reviews)</span>
-                        </div>
-                        <div class="price-row">
-                            <span class="price" aria-label="Sale price: $40.96">$40.96</span>
-                            <span class="compare-price" aria-label="Original price: $59.39">$59.39</span>
-                        </div>
-                        <div class="shipping-tag">
-                            ✓ Free Express Worldwide Shipping
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Secure checkout for MagSafe Magnetic Wireless Power Bank 10000mAh via USDT">Pay with USDT</button>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="card">
-                <div class="badge">Best Seller</div>
-                <img src="https://images.unsplash.com/photo-1526738549149-8e07eca6c147" alt="LED Flame Effect Air Humidifier &amp; Diffuser" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
-                <div class="card-body">
-                    <div>
-                        <h3 class="title">LED Flame Effect Air Humidifier &amp; Diffuser</h3>
-                        <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.8 out of 5 stars">★★★★★</span>
-                            <span aria-label="4.8 stars from 2733 reviews">4.8 (2733+ reviews)</span>
-                        </div>
-                        <div class="price-row">
-                            <span class="price" aria-label="Sale price: $40.24">$40.24</span>
-                            <span class="compare-price" aria-label="Original price: $58.34">$58.34</span>
-                        </div>
-                        <div class="shipping-tag">
-                            ✓ Free Express Worldwide Shipping
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Secure checkout for LED Flame Effect Air Humidifier &amp; Diffuser via USDT">Pay with USDT</button>
-                    </div>
-                </div>
-            </article>
-        
             <article class="card">
                 <div class="badge">Customer Choice</div>
-                <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f" alt="Smart Posture Correction Vibration Reminder" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <img src="https://images.unsplash.com/photo-1544117519-31a4b719223d" alt="Smart Posture Correction Vibration Reminder" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
                 <div class="card-body">
                     <div>
                         <h3 class="title">Smart Posture Correction Vibration Reminder</h3>
                         <div class="rating-row">
                             <span class="stars" aria-label="Rating: 4.7 out of 5 stars">★★★★★</span>
-                            <span aria-label="4.7 stars from 1414 reviews">4.7 (1414+ reviews)</span>
+                            <span>4.7 (3460+ reviews)</span>
                         </div>
                         <div class="price-row">
-                            <span class="price" aria-label="Sale price: $44.14">$44.14</span>
-                            <span class="compare-price" aria-label="Original price: $64.00">$64.00</span>
+                            <span class="price">$37.56</span>
+                            <span class="compare-price">$54.47</span>
                         </div>
                         <div class="shipping-tag">
                             ✓ Free Express Worldwide Shipping
                         </div>
                     </div>
                     <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Secure checkout for Smart Posture Correction Vibration Reminder via USDT">Pay with USDT</button>
+                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
                     </div>
                 </div>
             </article>
-        
             <article class="card">
                 <div class="badge">Viral Favorite</div>
-                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Precision Cordless Electric Screwdriver Set" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Electric Toothbrush with Smart Timer" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
                 <div class="card-body">
                     <div>
-                        <h3 class="title">Precision Cordless Electric Screwdriver Set</h3>
+                        <h3 class="title">Electric Toothbrush with Smart Timer</h3>
                         <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.7 out of 5 stars">★★★★★</span>
-                            <span aria-label="4.7 stars from 3788 reviews">4.7 (3788+ reviews)</span>
+                            <span class="stars" aria-label="Rating: 4.6 out of 5 stars">★★★★★</span>
+                            <span>4.6 (3718+ reviews)</span>
                         </div>
                         <div class="price-row">
-                            <span class="price" aria-label="Sale price: $41.13">$41.13</span>
-                            <span class="compare-price" aria-label="Original price: $59.64">$59.64</span>
+                            <span class="price">$49.52</span>
+                            <span class="compare-price">$71.80</span>
                         </div>
                         <div class="shipping-tag">
                             ✓ Free Express Worldwide Shipping
                         </div>
                     </div>
                     <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Secure checkout for Precision Cordless Electric Screwdriver Set via USDT">Pay with USDT</button>
+                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
                     </div>
                 </div>
             </article>
-        
+            <article class="card">
+                <div class="badge">Trending Global</div>
+                <img src="https://images.unsplash.com/photo-1526738549149-8e07eca6c147" alt="Bladeless Portable Rechargeable Neck Fan" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <div class="card-body">
+                    <div>
+                        <h3 class="title">Bladeless Portable Rechargeable Neck Fan</h3>
+                        <div class="rating-row">
+                            <span class="stars" aria-label="Rating: 4.7 out of 5 stars">★★★★★</span>
+                            <span>4.7 (2576+ reviews)</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$38.36</span>
+                            <span class="compare-price">$55.62</span>
+                        </div>
+                        <div class="shipping-tag">
+                            ✓ Free Express Worldwide Shipping
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="badge">Viral Favorite</div>
+                <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f" alt="Ergonomic Vertical Wireless Mouse Pro" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <div class="card-body">
+                    <div>
+                        <h3 class="title">Ergonomic Vertical Wireless Mouse Pro</h3>
+                        <div class="rating-row">
+                            <span class="stars" aria-label="Rating: 4.8 out of 5 stars">★★★★★</span>
+                            <span>4.8 (3663+ reviews)</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$36.71</span>
+                            <span class="compare-price">$53.23</span>
+                        </div>
+                        <div class="shipping-tag">
+                            ✓ Free Express Worldwide Shipping
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="badge">Customer Choice</div>
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Compact Projector 4K Video Projector" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <div class="card-body">
+                    <div>
+                        <h3 class="title">Compact Projector 4K Video Projector</h3>
+                        <div class="rating-row">
+                            <span class="stars" aria-label="Rating: 4.8 out of 5 stars">★★★★★</span>
+                            <span>4.8 (2676+ reviews)</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$30.20</span>
+                            <span class="compare-price">$43.79</span>
+                        </div>
+                        <div class="shipping-tag">
+                            ✓ Free Express Worldwide Shipping
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
+                    </div>
+                </div>
+            </article>
         </div>
     </div>
 
@@ -466,7 +454,7 @@
                         try {
                             window.open(checkoutUrl, "_blank", "noopener,noreferrer");
                         } catch (err) {
-                            console.error("[ERROR] Failed to open checkout link:", err);
+                            console.error("Checkout error:", err);
                         }
                     }
                 });
