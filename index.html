@@ -3,428 +3,390 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NovaMarket | Global Trending Store</title>
+    <title>NovaMarket | Premium Global Store</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
         body { background: #f9fafb; color: #111827; line-height: 1.5; }
         
         .announcement-bar { 
-            background: #0f172a; 
-            color: #f8fafc; 
-            text-align: center; 
-            font-size: 12px; 
-            padding: 10px; 
-            font-weight: 500; 
-            position: sticky; 
-            top: 0; 
-            z-index: 101; 
+            background: #0f172a; color: #f8fafc; text-align: center; font-size: 12px; 
+            padding: 12px; font-weight: 600; position: sticky; top: 0; z-index: 101; 
         }
         header { 
-            background: #ffffff; 
-            border-bottom: 1px solid #e5e7eb; 
-            padding: 15px 20px; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            position: sticky; 
-            top: 35px; 
-            z-index: 100; 
+            background: #ffffff; border-bottom: 1px solid #e5e7eb; padding: 16px 20px; 
+            display: flex; justify-content: space-between; align-items: center; 
+            position: sticky; top: 45px; z-index: 100; 
         }
         
-        .logo { font-size: 20px; font-weight: 700; color: #0f172a; letter-spacing: -0.5px; }
+        .logo { font-size: 22px; font-weight: 800; color: #0f172a; letter-spacing: -0.8px; }
         .logo span { color: #2563eb; }
-        .secure-badge { font-size: 12px; background: #eff6ff; color: #1d4ed8; padding: 5px 12px; border-radius: 20px; font-weight: 600; }
-        .hero { text-align: center; padding: 40px 15px 20px; background: linear-gradient(to bottom, #ffffff, #f9fafb); }
-        .hero h1 { font-size: 28px; font-weight: 800; color: #0f172a; margin-bottom: 8px; }
-        .hero p { color: #6b7280; font-size: 14px; max-width: 600px; margin: auto; }
-        .container { max-width: 1280px; margin: auto; padding: 20px 15px; }
+        .secure-badge { font-size: 11px; background: #eff6ff; color: #1d4ed8; padding: 6px 14px; 
+            border-radius: 20px; font-weight: 700; }
+        
+        .hero { text-align: center; padding: 50px 20px 30px; background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%); }
+        .hero h1 { font-size: 32px; font-weight: 900; color: #0f172a; margin-bottom: 12px; letter-spacing: -1px; }
+        .hero p { color: #6b7280; font-size: 15px; max-width: 600px; margin: auto; line-height: 1.6; }
+        
+        .container { max-width: 1280px; margin: auto; padding: 40px 20px; }
         
         .grid { 
-            display: grid; 
-            grid-template-columns: 1fr; 
-            gap: 15px; 
+            display: grid; grid-template-columns: 1fr; gap: 20px; 
         }
-        @media (min-width: 480px) {
-            .grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
-        }
-        @media (min-width: 768px) {
-            .grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
-        }
-        @media (min-width: 1024px) {
-            .grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; }
-        }
+        @media (min-width: 480px) { .grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
+        @media (min-width: 768px) { .grid { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px; } }
+        @media (min-width: 1024px) { .grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 28px; } }
         
         .card { 
-            background: #ffffff; 
-            border: 1px solid #e5e7eb; 
-            border-radius: 14px; 
-            overflow: hidden; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: space-between; 
-            transition: transform 0.2s, box-shadow 0.2s; 
-            position: relative; 
+            background: #ffffff; border: 1px solid #e5e7eb; border-radius: 12px; 
+            overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; 
+            transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1); position: relative; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
-        .card:hover { transform: translateY(-3px); box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.08); }
+        .card:hover { 
+            transform: translateY(-8px) scale(1.02); 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15); 
+        }
         
         .badge { 
-            position: absolute; 
-            top: 12px; 
-            left: 12px; 
-            background: #0f172a; 
-            color: #ffffff; 
-            font-size: 10px; 
-            font-weight: 600; 
-            padding: 4px 8px; 
-            border-radius: 6px; 
-            text-transform: uppercase; 
-            letter-spacing: 0.5px; 
-            z-index: 2; 
+            position: absolute; top: 12px; left: 12px; background: #0f172a; 
+            color: #ffffff; font-size: 11px; font-weight: 700; padding: 5px 10px; 
+            border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; z-index: 2; 
         }
         
-        .card img { width: 100%; height: 260px; object-fit: cover; background: #f3f4f6; }
-        .card-body { padding: 16px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
-        .title { font-size: 15px; font-weight: 600; color: #1f2937; margin-bottom: 8px; line-height: 1.4; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+        .card img { width: 100%; height: 240px; object-fit: cover; background: #f3f4f6; }
+        .card-body { padding: 18px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
+        
+        .title { 
+            font-size: 14px; font-weight: 700; color: #1f2937; margin-bottom: 10px; 
+            line-height: 1.4; overflow: hidden; text-overflow: ellipsis; 
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; 
+        }
         .rating-row { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #4b5563; margin-bottom: 12px; }
-        .stars { color: #f59e0b; font-weight: 700; }
-        .price-row { display: flex; align-items: baseline; gap: 8px; margin-bottom: 14px; }
-        .price { font-size: 20px; font-weight: 700; color: #0f172a; }
+        .stars { color: #f59e0b; font-weight: 800; letter-spacing: 1px; }
+        
+        .price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 14px; }
+        .price { font-size: 22px; font-weight: 800; color: #0f172a; }
         .compare-price { font-size: 14px; color: #9ca3af; text-decoration: line-through; }
-        .shipping-tag { font-size: 11px; color: #059669; font-weight: 600; margin-bottom: 14px; display: flex; align-items: center; gap: 4px; }
-        .profit-tag { font-size: 10px; color: #7c3aed; font-weight: 600; padding: 2px 6px; background: #ede9fe; border-radius: 4px; display: inline-block; margin-bottom: 8px; }
+        
+        .shipping-tag { font-size: 11px; color: #059669; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 4px; }
         
         .btn { 
-            display: block; 
-            width: 100%; 
-            text-align: center; 
-            background: #2563eb; 
-            color: #ffffff; 
-            padding: 12px; 
-            border: 2px solid transparent; 
-            border-radius: 8px; 
-            font-weight: 600; 
-            font-size: 14px; 
-            cursor: pointer; 
-            transition: all 0.2s; 
+            display: block; width: 100%; text-align: center; background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); 
+            color: #ffffff; padding: 14px; border: none; border-radius: 8px; 
+            font-weight: 700; font-size: 14px; cursor: pointer; transition: all 0.2s; 
         }
         .btn:hover { 
-            background: #1d4ed8; 
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+            transform: translateY(-2px); box-shadow: 0 8px 16px rgba(37, 99, 235, 0.4); 
         }
-        .btn:focus { 
-            outline: none; 
-            border-color: #1d4ed8; 
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1); 
-        }
-        .btn:active { 
-            transform: translateY(0); 
-            box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2); 
-        }
+        .btn:active { transform: translateY(0); }
         
-        footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 30px 15px; margin-top: 40px; font-size: 13px; }
-        footer p { margin-bottom: 6px; }
-
-        @media (min-width: 768px) {
-            header { padding: 20px 40px; }
-            .logo { font-size: 22px; }
-            .hero { padding: 50px 20px 30px; }
-            .hero h1 { font-size: 36px; }
-            .hero p { font-size: 16px; }
-            .container { padding: 40px 20px; }
-            .card-body { padding: 20px; }
+        footer { 
+            background: #0f172a; color: #94a3b8; text-align: center; 
+            padding: 40px 20px; margin-top: 50px; font-size: 13px; 
         }
+        footer p { margin-bottom: 8px; }
     </style>
 </head>
 <body>
     <div class="announcement-bar">
-        ⚡ Free Express Shipping Worldwide • Secure 256-Bit Encrypted Checkout
+        🚀 Premium Products • Fast Shipping • 100% Satisfaction Guaranteed
     </div>
     
     <header>
         <div class="logo">Nova<span>Market</span></div>
-        <div class="secure-badge">🔒 Secure Checkout</div>
+        <div class="secure-badge">✓ Verified & Trusted</div>
     </header>
 
     <div class="hero">
-        <h1>Global Trending Collection</h1>
-        <p>Discover hand-picked high-demand products delivered straight to your doorstep.</p>
+        <h1>Discover Premium Products</h1>
+        <p>Hand-picked, trending items from global markets delivered to your door.</p>
     </div>
 
     <div class="container">
         <div class="grid">
             <article class="card">
-                <div class="badge">Customer Choice</div>
-                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Wireless Keyboard Mouse Combo Set" loading="eager" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <div class="badge">Trending Global</div>
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Solar Power Bank 20000mAh" loading="eager" width="280" height="240" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>Premium Product</text></svg>" onerror="handleImageError(this)">
                 <div class="card-body">
                     <div>
-                        <h3 class="title">Wireless Keyboard Mouse Combo Set</h3>
-                        <div class="profit-tag">💰 38.0% Profit</div>
+                        <h3 class="title">Solar Power Bank 20000mAh</h3>
                         <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.6 out of 5 stars">★★★★★</span>
-                            <span>4.6 (2828+ reviews)</span>
+                            <span class="stars">★★★★★</span>
+                            <span>4.7 (3433+ reviews)</span>
                         </div>
                         <div class="price-row">
-                            <span class="price">$27.09</span>
-                            <span class="compare-price">$41.99</span>
+                            <span class="price">$38.96</span>
+                            <span class="compare-price">$58.03</span>
                         </div>
                         <div class="shipping-tag">
-                            ✓ Free Express Worldwide Shipping
+                            ✓ Free Worldwide Shipping
                         </div>
                     </div>
+                    <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com">
+                        Buy Now - Pay with USDT
+                    </button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="badge">Customer Choice</div>
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Electric Wine Opener Cordless" loading="eager" width="280" height="240" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>Premium Product</text></svg>" onerror="handleImageError(this)">
+                <div class="card-body">
                     <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
+                        <h3 class="title">Electric Wine Opener Cordless</h3>
+                        <div class="rating-row">
+                            <span class="stars">★★★★★</span>
+                            <span>4.9 (1621+ reviews)</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$35.40</span>
+                            <span class="compare-price">$53.09</span>
+                        </div>
+                        <div class="shipping-tag">
+                            ✓ Free Worldwide Shipping
+                        </div>
                     </div>
+                    <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com">
+                        Buy Now - Pay with USDT
+                    </button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="badge">Best Seller</div>
+                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90" alt="Smart WiFi Plug with Energy Monitoring" loading="eager" width="280" height="240" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>Premium Product</text></svg>" onerror="handleImageError(this)">
+                <div class="card-body">
+                    <div>
+                        <h3 class="title">Smart WiFi Plug with Energy Monitoring</h3>
+                        <div class="rating-row">
+                            <span class="stars">★★★★★</span>
+                            <span>4.8 (4428+ reviews)</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$41.43</span>
+                            <span class="compare-price">$69.51</span>
+                        </div>
+                        <div class="shipping-tag">
+                            ✓ Free Worldwide Shipping
+                        </div>
+                    </div>
+                    <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com">
+                        Buy Now - Pay with USDT
+                    </button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="badge">Best Seller</div>
+                <img src="https://images.unsplash.com/photo-1609592806148-d64e9a5b068d" alt="Smart Smoke Detector WiFi Enabled" loading="eager" width="280" height="240" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>Premium Product</text></svg>" onerror="handleImageError(this)">
+                <div class="card-body">
+                    <div>
+                        <h3 class="title">Smart Smoke Detector WiFi Enabled</h3>
+                        <div class="rating-row">
+                            <span class="stars">★★★★★</span>
+                            <span>4.9 (3968+ reviews)</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$36.02</span>
+                            <span class="compare-price">$57.40</span>
+                        </div>
+                        <div class="shipping-tag">
+                            ✓ Free Worldwide Shipping
+                        </div>
+                    </div>
+                    <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com">
+                        Buy Now - Pay with USDT
+                    </button>
                 </div>
             </article>
             <article class="card">
                 <div class="badge">Trending Global</div>
-                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Bluetooth 5.0 Wireless Headphones Pro" loading="eager" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e" alt="Smart Sleep Tracker Wristband" loading="lazy" width="280" height="240" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>Premium Product</text></svg>" onerror="handleImageError(this)">
                 <div class="card-body">
                     <div>
-                        <h3 class="title">Bluetooth 5.0 Wireless Headphones Pro</h3>
-                        <div class="profit-tag">💰 38.0% Profit</div>
+                        <h3 class="title">Smart Sleep Tracker Wristband</h3>
                         <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.6 out of 5 stars">★★★★★</span>
-                            <span>4.6 (2045+ reviews)</span>
+                            <span class="stars">★★★★★</span>
+                            <span>4.9 (1982+ reviews)</span>
                         </div>
                         <div class="price-row">
-                            <span class="price">$31.73</span>
-                            <span class="compare-price">$49.19</span>
+                            <span class="price">$29.96</span>
+                            <span class="compare-price">$50.18</span>
                         </div>
                         <div class="shipping-tag">
-                            ✓ Free Express Worldwide Shipping
+                            ✓ Free Worldwide Shipping
                         </div>
                     </div>
-                    <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
-                    </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="badge">Customer Choice</div>
-                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90" alt="Precision Cordless Electric Screwdriver Set" loading="eager" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
-                <div class="card-body">
-                    <div>
-                        <h3 class="title">Precision Cordless Electric Screwdriver Set</h3>
-                        <div class="profit-tag">💰 38.0% Profit</div>
-                        <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.6 out of 5 stars">★★★★★</span>
-                            <span>4.6 (3778+ reviews)</span>
-                        </div>
-                        <div class="price-row">
-                            <span class="price">$22.86</span>
-                            <span class="compare-price">$35.43</span>
-                        </div>
-                        <div class="shipping-tag">
-                            ✓ Free Express Worldwide Shipping
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
-                    </div>
+                    <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com">
+                        Buy Now - Pay with USDT
+                    </button>
                 </div>
             </article>
             <article class="card">
                 <div class="badge">Best Seller</div>
-                <img src="https://images.unsplash.com/photo-1609592806148-d64e9a5b068d" alt="Bluetooth Speaker 360 Surround Sound" loading="eager" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc" alt="Wireless Earbuds Noise Cancelling Pro" loading="lazy" width="280" height="240" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>Premium Product</text></svg>" onerror="handleImageError(this)">
                 <div class="card-body">
                     <div>
-                        <h3 class="title">Bluetooth Speaker 360 Surround Sound</h3>
-                        <div class="profit-tag">💰 38.0% Profit</div>
+                        <h3 class="title">Wireless Earbuds Noise Cancelling Pro</h3>
                         <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.7 out of 5 stars">★★★★★</span>
-                            <span>4.7 (2814+ reviews)</span>
+                            <span class="stars">★★★★★</span>
+                            <span>4.7 (2360+ reviews)</span>
                         </div>
                         <div class="price-row">
-                            <span class="price">$40.62</span>
-                            <span class="compare-price">$62.96</span>
+                            <span class="price">$38.38</span>
+                            <span class="compare-price">$56.27</span>
                         </div>
                         <div class="shipping-tag">
-                            ✓ Free Express Worldwide Shipping
+                            ✓ Free Worldwide Shipping
                         </div>
                     </div>
+                    <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com">
+                        Buy Now - Pay with USDT
+                    </button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="badge">Viral Favorite</div>
+                <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108" alt="Smart LED Bulbs Color Changing WiFi" loading="lazy" width="280" height="240" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>Premium Product</text></svg>" onerror="handleImageError(this)">
+                <div class="card-body">
                     <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
+                        <h3 class="title">Smart LED Bulbs Color Changing WiFi</h3>
+                        <div class="rating-row">
+                            <span class="stars">★★★★★</span>
+                            <span>4.7 (3320+ reviews)</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$19.04</span>
+                            <span class="compare-price">$30.10</span>
+                        </div>
+                        <div class="shipping-tag">
+                            ✓ Free Worldwide Shipping
+                        </div>
                     </div>
+                    <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com">
+                        Buy Now - Pay with USDT
+                    </button>
                 </div>
             </article>
             <article class="card">
                 <div class="badge">Customer Choice</div>
-                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e" alt="LED Flame Effect Air Humidifier Diffuser" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <img src="https://images.unsplash.com/photo-1544117519-31a4b719223d" alt="Electric Kettle Digital Temperature" loading="lazy" width="280" height="240" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>Premium Product</text></svg>" onerror="handleImageError(this)">
                 <div class="card-body">
                     <div>
-                        <h3 class="title">LED Flame Effect Air Humidifier Diffuser</h3>
-                        <div class="profit-tag">💰 38.0% Profit</div>
+                        <h3 class="title">Electric Kettle Digital Temperature</h3>
                         <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.9 out of 5 stars">★★★★★</span>
-                            <span>4.9 (3617+ reviews)</span>
+                            <span class="stars">★★★★★</span>
+                            <span>4.6 (3983+ reviews)</span>
                         </div>
                         <div class="price-row">
-                            <span class="price">$31.85</span>
-                            <span class="compare-price">$49.37</span>
+                            <span class="price">$32.96</span>
+                            <span class="compare-price">$49.42</span>
                         </div>
                         <div class="shipping-tag">
-                            ✓ Free Express Worldwide Shipping
+                            ✓ Free Worldwide Shipping
                         </div>
                     </div>
-                    <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
-                    </div>
+                    <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com">
+                        Buy Now - Pay with USDT
+                    </button>
                 </div>
             </article>
             <article class="card">
                 <div class="badge">Best Seller</div>
-                <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc" alt="Nail Drill Polisher Professional" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
-                <div class="card-body">
-                    <div>
-                        <h3 class="title">Nail Drill Polisher Professional</h3>
-                        <div class="profit-tag">💰 38.0% Profit</div>
-                        <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.7 out of 5 stars">★★★★★</span>
-                            <span>4.7 (3687+ reviews)</span>
-                        </div>
-                        <div class="price-row">
-                            <span class="price">$36.04</span>
-                            <span class="compare-price">$55.87</span>
-                        </div>
-                        <div class="shipping-tag">
-                            ✓ Free Express Worldwide Shipping
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
-                    </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="badge">Customer Choice</div>
-                <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108" alt="Electric Body Scrubber Waterproof" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
-                <div class="card-body">
-                    <div>
-                        <h3 class="title">Electric Body Scrubber Waterproof</h3>
-                        <div class="profit-tag">💰 38.0% Profit</div>
-                        <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.7 out of 5 stars">★★★★★</span>
-                            <span>4.7 (2986+ reviews)</span>
-                        </div>
-                        <div class="price-row">
-                            <span class="price">$27.89</span>
-                            <span class="compare-price">$43.23</span>
-                        </div>
-                        <div class="shipping-tag">
-                            ✓ Free Express Worldwide Shipping
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
-                    </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="badge">Best Seller</div>
-                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Wireless Charging Pad Fast Charger 15W" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
-                <div class="card-body">
-                    <div>
-                        <h3 class="title">Wireless Charging Pad Fast Charger 15W</h3>
-                        <div class="profit-tag">💰 38.0% Profit</div>
-                        <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.6 out of 5 stars">★★★★★</span>
-                            <span>4.6 (1801+ reviews)</span>
-                        </div>
-                        <div class="price-row">
-                            <span class="price">$45.20</span>
-                            <span class="compare-price">$70.07</span>
-                        </div>
-                        <div class="shipping-tag">
-                            ✓ Free Express Worldwide Shipping
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
-                    </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="badge">Best Seller</div>
-                <img src="https://images.unsplash.com/photo-1526738549149-8e07eca6c147" alt="Cable Management Box System" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
-                <div class="card-body">
-                    <div>
-                        <h3 class="title">Cable Management Box System</h3>
-                        <div class="profit-tag">💰 38.0% Profit</div>
-                        <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.8 out of 5 stars">★★★★★</span>
-                            <span>4.8 (3699+ reviews)</span>
-                        </div>
-                        <div class="price-row">
-                            <span class="price">$32.77</span>
-                            <span class="compare-price">$50.80</span>
-                        </div>
-                        <div class="shipping-tag">
-                            ✓ Free Express Worldwide Shipping
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
-                    </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="badge">Customer Choice</div>
-                <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f" alt="Electric Toothbrush with Smart Timer" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Electric Toothbrush with Smart Timer" loading="lazy" width="280" height="240" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>Premium Product</text></svg>" onerror="handleImageError(this)">
                 <div class="card-body">
                     <div>
                         <h3 class="title">Electric Toothbrush with Smart Timer</h3>
-                        <div class="profit-tag">💰 38.0% Profit</div>
                         <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.6 out of 5 stars">★★★★★</span>
-                            <span>4.6 (3537+ reviews)</span>
+                            <span class="stars">★★★★★</span>
+                            <span>4.7 (3508+ reviews)</span>
                         </div>
                         <div class="price-row">
-                            <span class="price">$29.41</span>
-                            <span class="compare-price">$45.58</span>
+                            <span class="price">$38.83</span>
+                            <span class="compare-price">$55.17</span>
                         </div>
                         <div class="shipping-tag">
-                            ✓ Free Express Worldwide Shipping
+                            ✓ Free Worldwide Shipping
                         </div>
                     </div>
-                    <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
-                    </div>
+                    <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com">
+                        Buy Now - Pay with USDT
+                    </button>
                 </div>
             </article>
             <article class="card">
-                <div class="badge">Customer Choice</div>
-                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="USB Flash Drive 256GB High Speed" loading="lazy" width="280" height="260" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>NovaMarket Product</text></svg>" onerror="handleImageError(this)">
+                <div class="badge">Best Seller</div>
+                <img src="https://images.unsplash.com/photo-1526738549149-8e07eca6c147" alt="Camping Sleeping Pad Inflatable" loading="lazy" width="280" height="240" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>Premium Product</text></svg>" onerror="handleImageError(this)">
                 <div class="card-body">
                     <div>
-                        <h3 class="title">USB Flash Drive 256GB High Speed</h3>
-                        <div class="profit-tag">💰 38.0% Profit</div>
+                        <h3 class="title">Camping Sleeping Pad Inflatable</h3>
                         <div class="rating-row">
-                            <span class="stars" aria-label="Rating: 4.9 out of 5 stars">★★★★★</span>
-                            <span>4.9 (2282+ reviews)</span>
+                            <span class="stars">★★★★★</span>
+                            <span>4.8 (2883+ reviews)</span>
                         </div>
                         <div class="price-row">
-                            <span class="price">$47.23</span>
-                            <span class="compare-price">$73.20</span>
+                            <span class="price">$28.34</span>
+                            <span class="compare-price">$40.54</span>
                         </div>
                         <div class="shipping-tag">
-                            ✓ Free Express Worldwide Shipping
+                            ✓ Free Worldwide Shipping
                         </div>
                     </div>
+                    <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com">
+                        Buy Now - Pay with USDT
+                    </button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="badge">Trending Global</div>
+                <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f" alt="WiFi Smart Plug Remote Control" loading="lazy" width="280" height="240" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>Premium Product</text></svg>" onerror="handleImageError(this)">
+                <div class="card-body">
                     <div>
-                        <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com" aria-label="Checkout">Pay with USDT</button>
+                        <h3 class="title">WiFi Smart Plug Remote Control</h3>
+                        <div class="rating-row">
+                            <span class="stars">★★★★★</span>
+                            <span>4.6 (4430+ reviews)</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$18.49</span>
+                            <span class="compare-price">$26.92</span>
+                        </div>
+                        <div class="shipping-tag">
+                            ✓ Free Worldwide Shipping
+                        </div>
                     </div>
+                    <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com">
+                        Buy Now - Pay with USDT
+                    </button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="badge">Trending Global</div>
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Food Dehydrator Digital" loading="lazy" width="280" height="240" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-size='16' fill='%236b7280'>Premium Product</text></svg>" onerror="handleImageError(this)">
+                <div class="card-body">
+                    <div>
+                        <h3 class="title">Food Dehydrator Digital</h3>
+                        <div class="rating-row">
+                            <span class="stars">★★★★★</span>
+                            <span>4.9 (4042+ reviews)</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$35.17</span>
+                            <span class="compare-price">$59.49</span>
+                        </div>
+                        <div class="shipping-tag">
+                            ✓ Free Worldwide Shipping
+                        </div>
+                    </div>
+                    <button type="button" class="btn checkout-btn" data-url="https://pay.binance.com">
+                        Buy Now - Pay with USDT
+                    </button>
                 </div>
             </article>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 NovaMarket Direct. All Rights Reserved.</p>
-        <p>Global Express Shipping & 24/7 Customer Support</p>
+        <p><strong>© 2026 NovaMarket Global</strong></p>
+        <p>Premium E-commerce • Fast Delivery • 24/7 Support</p>
     </footer>
 
     <script>
@@ -432,20 +394,12 @@
             if (img.dataset.hasFailed === "true") return;
             img.dataset.hasFailed = "true";
             img.src = img.getAttribute("data-fallback");
-            img.style.opacity = "0.7"; 
         }
 
         document.addEventListener("DOMContentLoaded", () => {
             document.querySelectorAll(".checkout-btn").forEach(button => {
                 button.addEventListener("click", () => {
-                    const checkoutUrl = button.getAttribute("data-url");
-                    if (checkoutUrl) {
-                        try {
-                            window.open(checkoutUrl, "_blank", "noopener,noreferrer");
-                        } catch (err) {
-                            console.error("Checkout error:", err);
-                        }
-                    }
+                    window.open("https://pay.binance.com", "_blank", "noopener,noreferrer");
                 });
             });
         });
