@@ -1,8 +1,8 @@
 {
-  "updated_at": 1790753425,
+  "updated_at": 1790754235,
   "target_margin": 40.0,
   "shipping_country": "US",
-  "count": 35,
+  "count": 59,
   "categories": [
     "Automotive",
     "Beauty & Cosmetics",
@@ -18,6 +18,50 @@
     "Toys & Kids"
   ],
   "products": [
+    {
+      "pid": "1371730312916242432",
+      "vid": "1371730314308751360",
+      "name": "Car Diamond Crystal Wax Black Wax Coating Waxing Polishing Sewage Crystal Hard Wax",
+      "sku": "CJQC1043907",
+      "image": "https://cf.cjdropshipping.com/1615958165728.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/1615958165728.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Automotive",
+      "cj_category": "",
+      "product_cost": 2.39,
+      "shipping_cost": 9.31,
+      "landed_cost": 11.7,
+      "price": 21.99,
+      "margin": 42.52974079126876,
+      "shipping_method": "CJPacket Eub Special Line",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754105
+    },
+    {
+      "pid": "1386170811295076352",
+      "vid": "1386337218213318656",
+      "name": "PU Leather Car Storage Bag Multifunction Seat Back Tray Hanging Bag Waterproof Car Organizer Automotive Interior Accesso",
+      "sku": "CJMT1097764",
+      "image": "https://cf.cjdropshipping.com/1619322948284.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/1619322948284.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Automotive",
+      "cj_category": "",
+      "product_cost": 5.33,
+      "shipping_cost": 12.45,
+      "landed_cost": 17.78,
+      "price": 31.99,
+      "margin": 40.58233823069709,
+      "shipping_method": "LuWei Ordinary US",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754235
+    },
     {
       "pid": "41CAB303-4E96-4FE9-AE77-7762F0CC0E1C",
       "vid": "4F5AE913-4870-47FB-88F7-259A2C29ABA2",
@@ -85,6 +129,28 @@
       "checked_at": 1790752589
     },
     {
+      "pid": "2406200720261609200",
+      "vid": "1942065296474021890",
+      "name": "PHOFAY Tinted Eyebrow Gel",
+      "sku": "CJCZ2064658",
+      "image": "https://cf.cjdropshipping.com/17255808/1831938208536203264.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/17255808/1831938208536203264.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Beauty & Cosmetics",
+      "cj_category": "",
+      "product_cost": 1.8,
+      "shipping_cost": 6.32,
+      "landed_cost": 8.12,
+      "price": 14.99,
+      "margin": 40.9292194796531,
+      "shipping_method": "CJPacket Sensitive Pro",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754078
+    },
+    {
       "pid": "2406281007561621800",
       "vid": "2406281007561622100",
       "name": "PHOFAY Triangular Eyebrow Pencil",
@@ -105,6 +171,28 @@
       "shipping_country": "US",
       "shipping_is_zero": false,
       "checked_at": 1790752439
+    },
+    {
+      "pid": "2407260514371629500",
+      "vid": "2407260514371629700",
+      "name": "PHOFAY MATTE LIP LINER LIPSTICK PEN",
+      "sku": "CJCZ2093884",
+      "image": "https://cf.cjdropshipping.com/17325792/1861246866063364096.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/17325792/1861246866063364096.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Beauty & Cosmetics",
+      "cj_category": "",
+      "product_cost": 2.0,
+      "shipping_cost": 5.06,
+      "landed_cost": 7.06,
+      "price": 12.99,
+      "margin": 40.44103156274057,
+      "shipping_method": "CJPacket Eub Special Line",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754140
     },
     {
       "pid": "2408190844251615500",
@@ -195,6 +283,28 @@
       "checked_at": 1790752444
     },
     {
+      "pid": "089B579D-CCDC-4E59-96F6-4BBC13DCF536",
+      "vid": "D0DBCCD7-A26B-44DD-86D3-EF91FD61DAC8",
+      "name": "Slit Ruffled Large Evening Dress",
+      "sku": "CJNSSYLY15124",
+      "image": "https://cf.cjdropshipping.com/d29bba04-41e3-4c68-8e15-9204a54aec26.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/d29bba04-41e3-4c68-8e15-9204a54aec26.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Fashion",
+      "cj_category": "",
+      "product_cost": 5.38,
+      "shipping_cost": 8.38,
+      "landed_cost": 13.76,
+      "price": 24.99,
+      "margin": 40.8374949979992,
+      "shipping_method": "LuWei Ordinary US",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754158
+    },
+    {
       "pid": "1589561880916938752",
       "vid": "1589561880963076096",
       "name": "Hobo Bags Women High Capacity Handbags Fahsion Commuting Crossbody Shoulder Bag Shopping Totes",
@@ -237,6 +347,28 @@
       "shipping_country": "US",
       "shipping_is_zero": false,
       "checked_at": 1790753302
+    },
+    {
+      "pid": "1705465925572497408",
+      "vid": "1705465926088396800",
+      "name": "Women's Summer Loose Casual Midi Dress Breathable Cotton Linen Short-sleeve Mid-length Dresses Women Simple Beach Dress",
+      "sku": "CJLY1854419",
+      "image": "https://oss-cf.cjdropshipping.com/product/2025/04/21/06/359a0834-5390-4e4b-b6e9-68b094ad346d.jpg",
+      "images": [
+        "https://oss-cf.cjdropshipping.com/product/2025/04/21/06/359a0834-5390-4e4b-b6e9-68b094ad346d.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Fashion",
+      "cj_category": "",
+      "product_cost": 5.97,
+      "shipping_cost": 7.87,
+      "landed_cost": 13.84,
+      "price": 24.99,
+      "margin": 40.517366946778715,
+      "shipping_method": "LuWei Ordinary US",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754223
     },
     {
       "pid": "2406250335581605700",
@@ -283,6 +415,50 @@
       "checked_at": 1790753229
     },
     {
+      "pid": "2602040945591611900",
+      "vid": "2602040945591619700",
+      "name": "Casual Loose Retro Striped Print Holiday Dress Summer Short Sleeve V Neck Robes Dress Boho Beach Pleated A-Line Long Dre",
+      "sku": "CJLY2754260",
+      "image": "https://oss-cf.cjdropshipping.com/product/2026/03/17/05/481340ff-b949-4525-be2d-944be50b16dc.jpg",
+      "images": [
+        "https://oss-cf.cjdropshipping.com/product/2026/03/17/05/481340ff-b949-4525-be2d-944be50b16dc.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Fashion",
+      "cj_category": "",
+      "product_cost": 7.63,
+      "shipping_cost": 7.65,
+      "landed_cost": 15.28,
+      "price": 27.99,
+      "margin": 41.437263308324404,
+      "shipping_method": "LuWei Ordinary US",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754029
+    },
+    {
+      "pid": "1934872151485612034",
+      "vid": "1934872151569498113",
+      "name": "25 In 1 Immune Supplement",
+      "sku": "CJHP2404057",
+      "image": "https://cf.cjdropshipping.com/5ed75aa6-f478-4186-b490-b8542bb65993.png",
+      "images": [
+        "https://cf.cjdropshipping.com/5ed75aa6-f478-4186-b490-b8542bb65993.png"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Health & Wellness",
+      "cj_category": "",
+      "product_cost": 3.0,
+      "shipping_cost": 11.65,
+      "landed_cost": 14.65,
+      "price": 26.99,
+      "margin": 41.70911448684698,
+      "shipping_method": "CJPacket Eub Special Line",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754193
+    },
+    {
       "pid": "2504080911411601200",
       "vid": "2504080911411601500",
       "name": "Mushroom Coffee",
@@ -305,6 +481,28 @@
       "checked_at": 1790752502
     },
     {
+      "pid": "1468188249951440896",
+      "vid": "1468188250022744064",
+      "name": "Pull-out Hot And Cold Household Kitchen And Dishwashing Brushed Copper Sink Faucet",
+      "sku": "CJCF1374458",
+      "image": "https://cf.cjdropshipping.com/46ef04ad-037d-4d2c-8810-5c5e8cf39759.jpg?cid=2504270300301604800",
+      "images": [
+        "https://cf.cjdropshipping.com/46ef04ad-037d-4d2c-8810-5c5e8cf39759.jpg?cid=2504270300301604800"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Home & Kitchen",
+      "cj_category": "",
+      "product_cost": 21.06,
+      "shipping_cost": 26.01,
+      "landed_cost": 47.07,
+      "price": 82.99,
+      "margin": 40.02083383540185,
+      "shipping_method": "LuWei Ordinary US",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754083
+    },
+    {
       "pid": "1607205299889385472",
       "vid": "1607205299973271552",
       "name": "Damascus Steel Hand Kitchen Knife",
@@ -325,6 +523,72 @@
       "shipping_country": "US",
       "shipping_is_zero": false,
       "checked_at": 1790752449
+    },
+    {
+      "pid": "1729677313220026368",
+      "vid": "1729677313614290944",
+      "name": "Household Chinese Kitchen Stainless Steel Butcher Knife",
+      "sku": "CJCF1908805",
+      "image": "https://oss-cf.cjdropshipping.com/product/2023/11/29/01/bfb514e7-460a-4940-b2e4-e9093f09136a.jpg",
+      "images": [
+        "https://oss-cf.cjdropshipping.com/product/2023/11/29/01/bfb514e7-460a-4940-b2e4-e9093f09136a.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Home & Kitchen",
+      "cj_category": "",
+      "product_cost": 7.32,
+      "shipping_cost": 19.32,
+      "landed_cost": 26.64,
+      "price": 47.99,
+      "margin": 40.963304855178166,
+      "shipping_method": "Qfulfillment A line",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754146
+    },
+    {
+      "pid": "1900382647983722497",
+      "vid": "1900382648038248450",
+      "name": "Dual Function Faucet Dispenser, Wine Stopper, Bottle Stopper, Interesting Faucet Dispenser For Cocktails And Whiskey Bot",
+      "sku": "CJCF2327060",
+      "image": "https://cf.cjdropshipping.com/6e230289-c481-408b-8eb5-780c1326b789.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/6e230289-c481-408b-8eb5-780c1326b789.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Home & Kitchen",
+      "cj_category": "",
+      "product_cost": 3.29,
+      "shipping_cost": 5.51,
+      "landed_cost": 8.8,
+      "price": 15.99,
+      "margin": 40.18943089430894,
+      "shipping_method": "CJPacket Super Pure Electricity",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754211
+    },
+    {
+      "pid": "1371030246756847616",
+      "vid": "1371030248195493888",
+      "name": "Small Design Sense Wave Pattern Jewelry Adjustable Necklace",
+      "sku": "CJLX1041587",
+      "image": "https://cf.cjdropshipping.com/1615714019919.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/1615714019919.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Jewelry",
+      "cj_category": "",
+      "product_cost": 12.04,
+      "shipping_cost": 2.06,
+      "landed_cost": 14.1,
+      "price": 25.99,
+      "margin": 41.69407464409388,
+      "shipping_method": "Jewel Shipping",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754230
     },
     {
       "pid": "1498934233517920256",
@@ -415,6 +679,28 @@
       "checked_at": 1790753307
     },
     {
+      "pid": "1922997254349783041",
+      "vid": "1922997254404308994",
+      "name": "Gold-plated Brass Pendant Necklace For Women, Water Wave Textured Collarbone Chain",
+      "sku": "CJLX2377381",
+      "image": "https://cf.cjdropshipping.com/2a0e0a88-a06a-4f29-b91d-83242c2dfd93.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/2a0e0a88-a06a-4f29-b91d-83242c2dfd93.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Jewelry",
+      "cj_category": "",
+      "product_cost": 1.0,
+      "shipping_cost": 4.35,
+      "landed_cost": 5.35,
+      "price": 9.99,
+      "margin": 40.543443443443444,
+      "shipping_method": "CJPacket Postal",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754164
+    },
+    {
       "pid": "19246181-AB1E-4423-9380-54347D306235",
       "vid": "1A3542FE-C2A1-4C6C-BF5D-5688B79F9A57",
       "name": "Anti EMF Radiation Protection Necklace",
@@ -435,6 +721,50 @@
       "shipping_country": "US",
       "shipping_is_zero": false,
       "checked_at": 1790753234
+    },
+    {
+      "pid": "2407180817451606200",
+      "vid": "2407180817451606400",
+      "name": "925 Silver Plated Feather Shape Pendant Necklace Moonstone Round Bead Jewelry Choker Gift",
+      "sku": "CJLX2087153",
+      "image": "https://oss-cf.cjdropshipping.com/product/2024/07/22/05/2ff7d82a-7504-4ae8-a5c9-8940537949a6.jpg",
+      "images": [
+        "https://oss-cf.cjdropshipping.com/product/2024/07/22/05/2ff7d82a-7504-4ae8-a5c9-8940537949a6.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Jewelry",
+      "cj_category": "",
+      "product_cost": 0.98,
+      "shipping_cost": 2.06,
+      "landed_cost": 3.04,
+      "price": 5.99,
+      "margin": 41.34040066777963,
+      "shipping_method": "Jewel Shipping",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754100
+    },
+    {
+      "pid": "2503170323101603500",
+      "vid": "2503170323101603700",
+      "name": "Shell Pearl Necklace With Rhinestones Female Zircon Temperament Personality Jewelry",
+      "sku": "CJLX2329390",
+      "image": "https://cf.cjdropshipping.com/quick/product/15469c1b-b020-48c5-b473-4daba1bca939.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/quick/product/15469c1b-b020-48c5-b473-4daba1bca939.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Jewelry",
+      "cj_category": "",
+      "product_cost": 0.7,
+      "shipping_cost": 2.06,
+      "landed_cost": 2.76,
+      "price": 5.99,
+      "margin": 46.01485809682805,
+      "shipping_method": "Jewel Shipping",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754036
     },
     {
       "pid": "4823C6E9-E430-4C9A-98C4-46FDDD5AC601",
@@ -479,6 +809,50 @@
       "shipping_country": "US",
       "shipping_is_zero": false,
       "checked_at": 1790753383
+    },
+    {
+      "pid": "1806358167711272960",
+      "vid": "1806358167732244481",
+      "name": "Large Capacity Backpack For Women Men Multiple Pockets And Zippers Versatile Computer Bags Business Travel Backpack",
+      "sku": "CJNS2070385",
+      "image": "https://oss-cf.cjdropshipping.com/product/2024/06/28/06/ac958ffc-113f-475d-87b5-a2c7a568ebe7.jpg",
+      "images": [
+        "https://oss-cf.cjdropshipping.com/product/2024/06/28/06/ac958ffc-113f-475d-87b5-a2c7a568ebe7.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Outdoor & Travel",
+      "cj_category": "",
+      "product_cost": 10.14,
+      "shipping_cost": 13.44,
+      "landed_cost": 23.58,
+      "price": 41.99,
+      "margin": 40.22931650392951,
+      "shipping_method": "LuWei Ordinary US",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754051
+    },
+    {
+      "pid": "2406210635451624600",
+      "vid": "2406210635451624900",
+      "name": "Tent Outdoor Camping 3-4 People Automatic Quickly Open",
+      "sku": "CJYD2065350",
+      "image": "https://oss-cf.cjdropshipping.com/product/2024/06/21/06/e0a3c292-63f2-4d75-ae06-431b6997518a_trans.jpeg",
+      "images": [
+        "https://oss-cf.cjdropshipping.com/product/2024/06/21/06/e0a3c292-63f2-4d75-ae06-431b6997518a_trans.jpeg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Outdoor & Travel",
+      "cj_category": "",
+      "product_cost": 14.76,
+      "shipping_cost": 30.63,
+      "landed_cost": 45.39,
+      "price": 80.99,
+      "margin": 40.685627855290775,
+      "shipping_method": "YunExpress Ordinary",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754111
     },
     {
       "pid": "1387330344046432256",
@@ -613,6 +987,28 @@
       "checked_at": 1790752432
     },
     {
+      "pid": "1866413797528195072",
+      "vid": "1866413802519416834",
+      "name": "Yoga Fitness Flared Pants With Pockets Ins Fashion Slim High Waist Sports Trousers Scrunch Butt Booty Workout Lifting Le",
+      "sku": "CJJS2239509",
+      "image": "https://oss-cf.cjdropshipping.com/product/2025/02/05/08/a0a8ec18-8cab-4da4-87a9-b20506f8d055.jpg",
+      "images": [
+        "https://oss-cf.cjdropshipping.com/product/2025/02/05/08/a0a8ec18-8cab-4da4-87a9-b20506f8d055.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Sports & Fitness",
+      "cj_category": "",
+      "product_cost": 5.31,
+      "shipping_cost": 8.14,
+      "landed_cost": 13.45,
+      "price": 24.99,
+      "margin": 42.07799119647859,
+      "shipping_method": "LuWei Ordinary US",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754134
+    },
+    {
       "pid": "1924765567194066946",
       "vid": "1924765567332478978",
       "name": "No Awkward Line Peach Butt Yoga Pants High Waist Tummy Control Running Sports Leggings",
@@ -633,6 +1029,50 @@
       "shipping_country": "US",
       "shipping_is_zero": false,
       "checked_at": 1790752658
+    },
+    {
+      "pid": "1924767932633886721",
+      "vid": "1924767932738744325",
+      "name": "High-waist Lifting Yoga Flared Pants, Nude Sensation Fitness Breathable Sports Leggings",
+      "sku": "CJJS2381240",
+      "image": "https://cf.cjdropshipping.com/23ec75be-2c3b-414c-ab7a-d7f76db4a5f8.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/23ec75be-2c3b-414c-ab7a-d7f76db4a5f8.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Sports & Fitness",
+      "cj_category": "",
+      "product_cost": 1.8,
+      "shipping_cost": 15.77,
+      "landed_cost": 17.57,
+      "price": 31.99,
+      "margin": 41.23879337292904,
+      "shipping_method": "LuWei Ordinary US",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754072
+    },
+    {
+      "pid": "2406130718081621200",
+      "vid": "2406130718081621800",
+      "name": "Women's Cross Waist Yoga Pants Loose Trousers Sports Pants",
+      "sku": "CJYD2059522",
+      "image": "https://oss-cf.cjdropshipping.com/product/2024/06/13/09/80d70ef0-b927-4d93-8132-dedd9a138a2c.jpg",
+      "images": [
+        "https://oss-cf.cjdropshipping.com/product/2024/06/13/09/80d70ef0-b927-4d93-8132-dedd9a138a2c.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Sports & Fitness",
+      "cj_category": "",
+      "product_cost": 5.03,
+      "shipping_cost": 8.01,
+      "landed_cost": 13.04,
+      "price": 23.99,
+      "margin": 41.493497290537725,
+      "shipping_method": "LuWei Ordinary US",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754199
     },
     {
       "pid": "2406240653371623700",
@@ -699,6 +1139,50 @@
       "shipping_country": "US",
       "shipping_is_zero": false,
       "checked_at": 1790753341
+    },
+    {
+      "pid": "DBE1973D-FF94-43DD-9835-85CF59C272CA",
+      "vid": "FE96388C-9EB2-4323-AA42-AC0183CAC243",
+      "name": "Natural Stone Colorful Chakra Energy Yoga Bracelet",
+      "sku": "CJZBLXSL00133",
+      "image": "https://oss-cf.cjdropshipping.com/product/2025/03/14/02/97f2812d-beb3-46a7-b53c-1599a361b6c2.jpg",
+      "images": [
+        "https://oss-cf.cjdropshipping.com/product/2025/03/14/02/97f2812d-beb3-46a7-b53c-1599a361b6c2.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Sports & Fitness",
+      "cj_category": "",
+      "product_cost": 1.2,
+      "shipping_cost": 2.2,
+      "landed_cost": 3.4,
+      "price": 6.99,
+      "margin": 44.16723891273247,
+      "shipping_method": "Jewel Shipping",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754002
+    },
+    {
+      "pid": "1363045794600587264",
+      "vid": "1363045795821129728",
+      "name": "Waterproof New RGB LED Solar Light Step Fence Light",
+      "sku": "CJLE1016931",
+      "image": "https://cf.cjdropshipping.com/1614679282500.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/1614679282500.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Tools & Garden",
+      "cj_category": "",
+      "product_cost": 3.96,
+      "shipping_cost": 6.27,
+      "landed_cost": 10.23,
+      "price": 18.99,
+      "margin": 41.649763033175354,
+      "shipping_method": "CJPacket Super Pure Electricity",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754182
     },
     {
       "pid": "1468440297624178688",
@@ -787,6 +1271,50 @@
       "shipping_country": "US",
       "shipping_is_zero": false,
       "checked_at": 1790753425
+    },
+    {
+      "pid": "57D2C559-BE02-42E2-AAD8-AA532A89D58E",
+      "vid": "1442767238980571136",
+      "name": "Prank Spider Wooden Scare Box Trick Play Joke Lifelike Surprise April Fools' Day Funny Novelty Toys Gags Practical Gifts",
+      "sku": "CJWJWJYZ00716",
+      "image": "https://cf.cjdropshipping.com/ab6cc8af-43c8-42fd-bd37-81daa3e33745.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/ab6cc8af-43c8-42fd-bd37-81daa3e33745.jpg"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Toys & Kids",
+      "cj_category": "",
+      "product_cost": 1.29,
+      "shipping_cost": 5.59,
+      "landed_cost": 6.88,
+      "price": 12.99,
+      "margin": 41.82671285604311,
+      "shipping_method": "CJPacket Super Pure Electricity",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754088
+    },
+    {
+      "pid": "A98EBA8C-80A7-4027-B33D-45FE2D33DBC8",
+      "vid": "B6284108-8852-404B-84B1-5DD0CE87FA38",
+      "name": "Gradient slip colored star origami",
+      "sku": "CJWJWJYZ02668",
+      "image": "https://cf.cjdropshipping.com/203109/1420723682642.png",
+      "images": [
+        "https://cf.cjdropshipping.com/203109/1420723682642.png"
+      ],
+      "description": "High quality product shipped from global warehouses.",
+      "category": "Toys & Kids",
+      "cj_category": "",
+      "product_cost": 0.74,
+      "shipping_cost": 4.75,
+      "landed_cost": 5.49,
+      "price": 10.99,
+      "margin": 44.41574158325751,
+      "shipping_method": "CJPacket Super Pure Electricity",
+      "shipping_country": "US",
+      "shipping_is_zero": false,
+      "checked_at": 1790754152
     }
   ]
 }
